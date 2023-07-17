@@ -83,7 +83,7 @@ resource "aws_security_group" "main" {
 
   ingress {
     from_port = 1024
-    to_port   = 1073
+    to_port   = 65535
     protocol  = "tcp"
     // Enable inbound ports to Endpoint service
     cidr_blocks = [local.aws_route_cidr_block]
